@@ -332,7 +332,7 @@ transition: 0.5s;
 }
 
 .img-hover:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .menu-image {
@@ -746,15 +746,31 @@ color: white;
 }
 
 .card-body p {
-    width: 75%;
-    margin-bottom: 5px !important;
-    font-weight: bold !important;
+    /* font-weight: bold !important; */
     
 }
-.contact-us-card-icons {
+.contact-us-card-icons-1 {
     width: 100%;
     display: flex;
     gap:5px;
     justify-content: center;
     align-items: center;
+}
+.contact-us-card-icons-1 p {
+    margin-bottom: 5px !important;
+    /* font-weight: bold !important; */
+}
+.contact-us-card-icons {
+    width: 100%;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-card-icons p {
+    width: 75%;
+    margin-bottom: 5px !important;
+    /* font-weight: bold !important; */
+    text-align: left;
+    line-height: 16px;
 }
