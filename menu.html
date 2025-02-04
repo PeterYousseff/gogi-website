@@ -5,860 +5,1255 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet -->
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/fontawesome.css">
-    <link rel="stylesheet" href="css/vendor/brands.css">
-    <link rel="stylesheet" href="css/vendor/regular.css">
-    <link rel="stylesheet" href="css/vendor/solid.css">
-    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/brands.css">
+    <link rel="stylesheet" href="./css/regular.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <!-- google fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Gogi - Menu</title>
+    <title>Gogi</title>
 </head>
 
 <body>
-    <!-- Script javascript -->
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
 
 
-    <!-- Sticky Header -->
-    <section class="r-section p-0 sticky-top bg-white shadow">
-        <div class="r-container p-0">
-            <!-- Navmenu -->
-            <nav class="navbar navbar-expand-lg w-100 py-0">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="image/logo.png" class="img-site-logo" alt="" srcset=""></a>
-                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars icons-close"></i>
-                        <i class="fa-solid fa-xmark icons-open"></i>
-                    </button>
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb mb-lg-0 gap-3">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="about_us.html" class="nav-link">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="menu.html" class="nav-link">MENU</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="shop.html" class="nav-link">SHOP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./index.html#news" class="nav-link">NEWS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link">GET IN TOUCH</a>
-                            </li>
-                        </ul>
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+      <div class="offcanvas__info">
+          <div class="offcanvas__wrapper">
+              <div class="offcanvas__content">
+                  <div class="offcanvas__top  d-flex justify-content-between align-items-center">
+                      <div class="offcanvas__logo">
+                          <a href="index.html">
+                              <img src="./image/logo.png" alt="logo-img">
+                          </a>
+                      </div>
+                      <div class="offcanvas__close">
+                          <button>
+                              <i class="fas fa-times"></i>
+                          </button>
+                      </div>
+                  </div>
+                  <div class="mobile-menu fix "></div>
+                  <div class="offcanvas__contact">
+                      <h4>CONTACT INFO</h4>
+                      <ul>
+                          <li class="d-flex align-items-center">
+                              <div class="offcanvas__contact-icon">
+                                  <i class="fal fa-map-marker-alt"></i>
+                              </div>
+                              <div class="offcanvas__contact-text">
+                                  <a target="_blank" href="https://maps.app.goo.gl/oq8azYhfYxdJRqVCA">7 Demshq Street, Maadi, Cairo, Egypt</a>
+                              </div>
+                          </li>
+
+                          <li class="d-flex align-items-center">
+                              <div class="offcanvas__contact-icon ">
+                                  <i class="fal fa-envelope"></i>
+                              </div>
+                              <div class="offcanvas__contact-text">
+                                  <a href="tel:+013-003-003-9993"><span
+                                          class="mailto:info@gogiegy.com">info@gogiegy.com</span></a>
+                              </div>
+                          </li>
+                          
+                          <li class="d-flex align-items-center">
+                              <div class="offcanvas__contact-icon ">
+                                  <i class="fal fa-clock"></i>
+                              </div>
+                              <div class="offcanvas__contact-text">
+                                  <a target="_blank" href="https://wa.me/+2001210065556">We’re open daily from 12 PM to 12 AM </a>
+                              </div>
+                          </li>
+                          <li class="d-flex align-items-center">
+                              <div class="offcanvas__contact-icon ">
+                                  <i class="far fa-phone"></i>
+                              </div>
+                              <div class="offcanvas__contact-text">
+                                  <a href="https://wa.me/+2001210065556">01210065556</a>
+                              </div>
+                          </li>
+                      </ul>
+                      <div class="header-button ">
+                          <a href="./menu.html" class="theme-btn">
+                              ORDER NOW
+                          </a>
+                      </div>
+                      <div class="social-icon d-flex align-items-center">
+                          <a href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA=="><i class="fa-brands fa-instagram"></i></a>
+                          <a href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                          <a href="https://www.linkedin.com/company/gogiegypt/"><i class="fa-brands fa-linkedin"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="main-header-wrapper">
+                <!-- logo -->
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="./image/logo2023.png" alt="img">
+                    </a>
+                </div>
+                <div class="main-header-items">
+                    <div id="header-sticky" class="header-1 sticky open">
+                        <div class="mega-menu-wrapper">
+                            <div class="header-main">
+                                <div class="logo">
+                                    <a href="index.html" class="header-logo">
+                                        <img src="./image/logo2023.png" alt="logo-img">
+                                    </a>
+                                </div>
+                                <div class="header-left">
+                                    <div class="mean__menu-wrapper">
+                                        <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li class="">
+                                                    <a href="./index.html">HOME</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="./about_us.html">ABOUT US</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./menu.html">MENU</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="./shop.html">SHOP</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./contact_us.html">GIT IN TOUCH</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex justify-content-end align-items-center">
+                                    <div class="header__cart cart-icon cart-icon">
+                                        <a href="cart.html">
+                                            <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                                            <span id="cart-count">0</span>
+                                        </a>
+                                    </div>
+                                    <a class="theme-btn" href="menu.html">ORDER NOW <i
+                                            class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <div class="header__hamburger d-xl-block my-auto">
+                                        <div class="sidebar__toggle">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
-    </section>
-    <!-- End of Header -->
+    </header>
+
 
     <!-- main body -->
     <main>
 <!-- intro section -->
 <section class="r-section section-3 position-relative min-vh-100">
-            <div class="r-container d-flex flex-column justify-content-center text-center position-relative"
-                style="z-index: 2;">
-                <h1 class="text-1 color-1">Menu</h1>
+            <div class="heading">
+                <h1 class=" color-1 main-heading">Menu</h1>
             </div>
             <div class="image-overlay">
             </div>
 </section>
 
 <!-- start menu -->
-<!-- appetizers -->
-<section class="r-section section-4 overflow-hidden">
-    <div class="r-container">
-        <div class="menu_section row row-cols-md-2 row-cols-1">
-            <div class="container menu-image mb-5">
-                <div class="position-relative h-100">
-                    <img src="image/menu1.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                </div>
-            </div>
 
-            <div class="container d-flex flex-column gap-2 position-relative">
-                <div class="union-bg" style="right: -100px; z-index: -2;">
-                </div>
-                <h3 class="text-title color-1 menu-category-title">APPETIZERS</h3>
-                <div class="container d-flex flex-column w-100 mt-3 px-0">
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Spring Rolls Vegetables (4 pcs)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">114</h5>
-                            <!-- <h5 class="new-label bg-red">Top</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Spring Rolls Chicken (4 pcs)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">126</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Steamed Veg. Dumpling</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">119</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Steamed Beef Dumpling</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">126</h5>
-                            <!-- <h5 class="new-label bg-yellow">New</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Fried Veg. Dumpling</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">119</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Fried Beef Dumpling</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">126</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Vegetable Kimbap</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">150</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Beef Kimbap</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">168</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Tteokbokki</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">162</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Korean Vegetable Pancake</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">126</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Kimchi Pancake (Kimchi Jeon)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">230</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Kimchi Pancake with Seafood (Kimchi Jeon)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">340</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Korean Seafood Pancake</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">320</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Pan-Fried Tofu with Soy Sauce</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">240</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Stir-Fried Kimchi with Tofu</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">230</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Sweet and Sour Mix Vegetables</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">162</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Vegetable Tempura</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">145</h5>
-                        </div>
-                    </div>
-                    <div class="order-now-link">
-                        <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
+<!-- APPETIZERS -->
+<div class="my-container" id="APPETIZERS">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu1.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">APPETIZERS</h1>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Spring Rolls Vegetables (4 pcs)</h5>
+            <span>114</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Spring Rolls Vegetables (4 pcs)', 114)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
         </div>
     </div>
-</section>
-
-
-<!-- soup -->
-<section class="r-section section-4 overflow-hidden">
-    <div class="r-container">
-        <div class="menu_section row row-cols-md-2 row-cols-1">
-            <div class="container menu-image mb-5">
-                <div class="position-relative h-100">
-                    <img src="image/menu2.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                </div>
-            </div>
-
-            <div class="container d-flex flex-column gap-2 position-relative">
-                <div class="union-bg" style="right: -100px; z-index: -2;">
-                </div>
-                <h3 class="text-title color-1 menu-category-title">SOUP</h3>
-                <div class="container d-flex flex-column w-100 mt-3 px-0">
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Wonton Soup</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">120</h5>
-                            <!-- <h5 class="new-label bg-red">Top</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Miso Soup</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">110</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Hot and Sour Soup</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">135</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Seafood Soup</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">180</h5>
-                            <!-- <h5 class="new-label bg-yellow">New</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Mushroom Soupf</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">125</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Sweet Corn Soup</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">119</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Kimchi Jjigae</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">310</h5>
-                        </div>
-                    </div>
-                    <div class="order-now-link">
-                        <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Spring Rolls Chicken (4 pcs)</h5>
+            <span>126</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Spring Rolls Chicken (4 pcs)', 126)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
         </div>
     </div>
-</section>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Steamed Veg. Dumpling</h5>
+            <span>119</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Steamed Veg. Dumpling', 119)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Steamed Beef Dumpling</h5>
+            <span>126</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Steamed Beef Dumpling', 126)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Veg. Dumpling</h5>
+            <span>119</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Fried Veg. Dumpling', 119)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Vegetable Kimbap</h5>
+            <span>150</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Vegetable Kimbap', 150)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef Kimbap</h5>
+            <span>168</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Beef Kimbap', 168)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Tteokbokki</h5>
+            <span>162</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Tteokbokki', 162)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Korean Vegetable Pancake</h5>
+            <span>126</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Korean Vegetable Pancake', 126)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Kimchi Pancake (Kimchi Jeon)</h5>
+            <span>230</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Kimchi Pancake (Kimchi Jeon)', 230)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Kimchi Pancake with Seafood (Kimchi Jeon)</h5>
+            <span>340</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Kimchi Pancake with Seafood (Kimchi Jeon)', 340)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Korean Seafood Pancake</h5>
+            <span>320</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Korean Seafood Pancake', 320)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Pan-Fried Tofu with Soy Sauce</h5>
+            <span>240</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Pan-Fried Tofu with Soy Sauce', 240)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Kimchi with Tofu</h5>
+            <span>230</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Stir-Fried Kimchi with Tofu', 230)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Sweet and Sour Mix Vegetables</h5>
+            <span>162</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Sweet and Sour Mix Vegetables', 162)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Vegetable Tempura</h5>
+            <span>145</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'APPETIZERS', 'Vegetable Tempura', 145)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
 
-<!-- main dishes -->
-<section class="r-section section-4 overflow-hidden">
-            <div class="r-container">
-                <div class="menu_section row row-cols-md-2 row-cols-1">
-                    <div class="container menu-image mb-5">
-                        <div class="position-relative h-100">
-                            <img src="image/menu3.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                        </div>
-                    </div>
 
-                    <div class="container d-flex flex-column gap-2 position-relative">
-                        <div class="union-bg" style="right: -100px; z-index: -2;">
-                        </div>
-                        <h3 class="text-title color-1 menu-category-title">MAIN DISHES</h3>
-                        <div class="container d-flex flex-column w-100 mt-3 px-0">
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Sweet and Sour Chicken</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">255</h5>
-                                    <!-- <h5 class="new-label bg-red">Top</h5> -->
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Sweet and Sour Shrimp</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">395</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Yangnyeom Chicken</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">295</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Bulgogi Chicken</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">285</h5>
-                                    <!-- <h5 class="new-label bg-yellow">New</h5> -->
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Bulgogi Beef</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">340</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Korean Chicken Katsu</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">430</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Beef with Garlic Sauce</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">320</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Shrimp with Garlic Sauce</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">275</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Beef Mushroom</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">360</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Chicken Broccoli</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">270</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Beef with Green Pepper</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">295</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Fried Chicken Wings</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">180</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Shrimp Tempura</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">480</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Calamari Tempura</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">360</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Fried Chicken (Whole Chicken)</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">550</h5>
-                                </div>
-                            </div>
-                            <div class="order-now-link">
-                                <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- SOUP -->
+<div class="my-container" id="SOUP">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu2.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">SOUP</h1>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Wonton Soup</h5>
+            <span>120</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Wonton Soup', 120)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Miso Soup</h5>
+            <span>110</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Miso Soup', 110)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Hot and Sour Soup</h5>
+            <span>135</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Hot and Sour Soup', 135)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Seafood Soup</h5>
+            <span>180</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Seafood Soup', 180)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Mushroom Soupf</h5>
+            <span>125</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Mushroom Soupf', 125)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Sweet Corn Soup</h5>
+            <span>119</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Sweet Corn Soup', 119)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Kimchi Jjigae</h5>
+            <span>310</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'SOUP', 'Kimchi Jjigae', 310)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MAIN DISHES -->
+<div class="my-container" id="MAIN-DISHES">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu3.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">MAIN DISHES</h1>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Sweet and Sour Chicken</h5>
+            <span>255</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Sweet and Sour Chicken', 255)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Yangnyeom Chicken</h5>
+            <span>295</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Yangnyeom Chicken', 295)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Bulgogi Chicken</h5>
+            <span>285</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Bulgogi Chicken', 285)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Bulgogi Beef</h5>
+            <span>340</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Bulgogi Beef', 340)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Korean Chicken Katsu</h5>
+            <span>430</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Korean Chicken Katsu', 430)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef with Garlic Sauce</h5>
+            <span>320</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Beef with Garlic Sauce', 320)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Shrimp with Garlic Sauce</h5>
+            <span>275</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Shrimp with Garlic Sauce', 275)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef Mushroom</h5>
+            <span>360</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Beef Mushroom', 360)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Chicken Broccoli</h5>
+            <span>270</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Chicken Broccoli', 270)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+    
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Beef with Green Pepper</h5>
+            <span>295</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Stir-Fried Beef with Green Pepper', 295)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Chicken Wings</h5>
+            <span>180</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Fried Chicken Wings', 180)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Shrimp Tempura</h5>
+            <span>480</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Shrimp Tempura', 480)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Calamari Tempura</h5>
+            <span>360</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Calamari Tempura', 360)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Chicken (Whole Chicken)</h5>
+            <span>550</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'MAIN DISHES', 'Fried Chicken (Whole Chicken)', 550)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
 
 <!-- noodles -->
-<section class="r-section section-4 overflow-hidden">
-            <div class="r-container">
-                <div class="menu_section row row-cols-md-2 row-cols-1">
-                    <div class="container menu-image mb-5">
-                        <div class="position-relative h-100">
-                            <img src="image/menu4.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                        </div>
-                    </div>
+<div class="my-container" id="NOODLES">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu4.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">NOODLES</h1>
 
-                    <div class="container d-flex flex-column gap-2 position-relative">
-                        <div class="union-bg" style="right: -100px; z-index: -2;">
-                        </div>
-                        <h3 class="text-title color-1 menu-category-title">NOODLES</h3>
-                        <div class="container d-flex flex-column w-100 mt-3 px-0">
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Vegetable Noodles</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">180</h5>
-                                    <!-- <h5 class="new-label bg-red">Top</h5> -->
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Chicken Noodles</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">210</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Beef Noodles</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">235</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Seafood Noodles</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">245</h5>
-                                    <!-- <h5 class="new-label bg-yellow">New</h5> -->
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Stir-Fried Mixed Noodles</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">268</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Vegan Japchae (Korean stir-fried glass noodles with vegetables)</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">245</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Beef Japchae (Korean stir-fried glass noodles with beef)</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">265</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Chicken Noodle Soup</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">248</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Beef Noodle Soup</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">255</h5>
-                                </div>
-                            </div>
-                            <div class="menu-container d-flex flex-row mb">
-                                <div class="menu w-100">
-                                    <h5 class="text-1">Seafood Noodle Soup</h5>
-                                </div>
-                                <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                                    <h5 class="text-1 w-100">285</h5>
-                                </div>
-                            </div>
-                            <div class="order-now-link">
-                                <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-</section>
-
-
-<!-- rice -->
-<section class="r-section section-4 overflow-hidden">
-    <div class="r-container">
-        <div class="menu_section row row-cols-md-2 row-cols-1">
-            <div class="container menu-image mb-5">
-                <div class="position-relative h-100">
-                    <img src="image/menu5.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                </div>
-            </div>
-
-            <div class="container d-flex flex-column gap-2 position-relative">
-                <div class="union-bg" style="right: -100px; z-index: -2;">
-                </div>
-                <h3 class="text-title color-1 menu-category-title">RICE</h3>
-                <div class="container d-flex flex-column w-100 mt-3 px-0">
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Steamed Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">42</h5>
-                            <!-- <h5 class="new-label bg-red">Top</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Vegetable Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">136</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Chicken Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">172</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Beef Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">185</h5>
-                            <!-- <h5 class="new-label bg-yellow">New</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Shrimp Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">217</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Seafood Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">240</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Mixed Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">245</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Vegetable Kimchi Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">239</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Beef Kimchi Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">280</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Seafood Kimchi Fried Rice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">275</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Bibimbap (Korean mixed rice with beef and vegetables)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">265</h5>
-                        </div>
-                    </div>
-                    <div class="order-now-link">
-                        <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Vegetable Noodles</h5>
+            <span>180</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Stir-Fried Vegetable Noodles', 180)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
         </div>
     </div>
-</section>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Chicken Noodles</h5>
+            <span>210</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Stir-Fried Chicken Noodles', 210)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Beef Noodles</h5>
+            <span>235</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Stir-Fried Beef Noodles', 235)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Stir-Fried Mixed Noodles</h5>
+            <span>268</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Stir-Fried Mixed Noodles', 268)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Vegan Japchae (Korean stir-fried glass noodles with vegetables)</h5>
+            <span>245</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Vegan Japchae (Korean stir-fried glass noodles with vegetables)', 245)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef Japchae (Korean stir-fried glass noodles with beef)</h5>
+            <span>265</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Beef Japchae (Korean stir-fried glass noodles with beef)', 265)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Chicken Noodle Soup</h5>
+            <span>248</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Chicken Noodle Soup', 248)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef Noodle Soup</h5>
+            <span>255</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Beef Noodle Soup', 255)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Seafood Noodle Soup</h5>
+            <span>285</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'NOODLES', 'Seafood Noodle Soup', 285)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- RICE -->
+<div class="my-container" id="RICE">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu5.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">RICE</h1>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Steamed Rice</h5>
+            <span>42</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Steamed Rice', 42)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Vegetable Fried Rice</h5>
+            <span>136</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Vegetable Fried Rice', 136)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Chicken Fried Rice</h5>
+            <span>172</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Chicken Fried Rice', 172)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Beef Fried Rice</h5>
+            <span>185</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Beef Fried Rice', 185)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Shrimp Fried Rice</h5>
+            <span>217</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Shrimp Fried Rice', 217)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Seafood Fried Rice</h5>
+            <span>240</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Seafood Fried Rice', 240)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Vegetable Kimchi Fried Rice</h5>
+            <span>239</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Vegetable Kimchi Fried Rice', 239)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Seafood Kimchi Fried Rice</h5>
+            <span>275</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Seafood Kimchi Fried Rice', 275)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Bibimbap (Korean mixed rice with beef and vegetables)</h5>
+            <span>265</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'RICE', 'Bibimbap (Korean mixed rice with beef and vegetables)', 265)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
 
 <!-- desserts -->
-<section class="r-section section-4 overflow-hidden">
-    <div class="r-container">
-        <div class="menu_section row row-cols-md-2 row-cols-1">
-            <div class="container menu-image mb-5">
-                <div class="position-relative h-100">
-                    <img src="image/menu-desserts.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                </div>
-            </div>
+<div class="my-container" id="DESSERTS">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="image/menu-desserts.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">DESSERTS</h1>
 
-            <div class="container d-flex flex-column gap-2 position-relative">
-                <div class="union-bg" style="right: -100px; z-index: -2;">
-                </div>
-                <h3 class="text-title color-1 menu-category-title">DESSERTS</h3>
-                <div class="container d-flex flex-column w-100 mt-3 px-0">
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Fried Bananas with Ice Cream (Honey)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">175</h5>
-                            <!-- <h5 class="new-label bg-red">Top</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Fried Bananas with Ice Cream (Chocolate)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">195</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Fried Bananas with Ice Cream (Lotus)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">210</h5>
-                        </div>
-                    </div>
-                    <div class="order-now-link">
-                        <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Bananas with Ice Cream (Honey)</h5>
+            <span>175</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DESSERTS', 'Fried Bananas with Ice Cream (Honey)', 175)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
         </div>
     </div>
-</section>
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Bananas with Ice Cream (chocolate)</h5>
+            <span>195</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DESSERTS', 'Fried Bananas with Ice Cream (chocolate)', 195)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Fried Bananas with Ice Cream (Lotus)</h5>
+            <span>210</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DESSERTS', 'Fried Bananas with Ice Cream (Lotus)', 210)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+
+    </div>
+  </div>
+</div>
+
 
 <!-- drinks -->
-<section class="r-section section-4 overflow-hidden">
-    <div class="r-container">
-        <div class="menu_section row row-cols-md-2 row-cols-1">
-            <div class="container menu-image mb-5">
-                <div class="position-relative h-100">
-                    <img src="image/menu-drinks.jpg" alt="" class="img-fluid img-thumbnail shadow">
-                </div>
-            </div>
+<div class="my-container" id="DRINKS">
+  <div class="product-menu-container">
+    <div class="image">
+      <img src="./image/menu-drinks.jpg" alt="">
+    </div>
+    <div class="items">
+      <h1 class="color-1 ">DRINKS</h1>
 
-            <div class="container d-flex flex-column gap-2 position-relative">
-                <div class="union-bg" style="right: -100px; z-index: -2;">
-                </div>
-                <h3 class="text-title color-1 menu-category-title">DRINKS</h3>
-                <div class="container d-flex flex-column w-100 mt-3 px-0">
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Orange Juice</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">45</h5>
-                            <!-- <h5 class="new-label bg-red">Top</h5> -->
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Soft Drinks</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">35</h5>
-                        </div>
-                    </div>
-                    <div class="menu-container d-flex flex-row mb">
-                        <div class="menu w-100">
-                            <h5 class="text-1">Mineral Water (Small)</h5>
-                        </div>
-                        <div class="menu-price w-100 text-center" style="max-width: 100px;">
-                            <h5 class="text-1 w-100">20</h5>
-                        </div>
-                    </div>
-                    <div class="order-now-link">
-                        <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
+      <div class="menu-container d-flex flex-row mb product ">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Orange Juice</h5>
+            <span>45</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DRINKS', 'Orange Juice', 45)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
         </div>
     </div>
-</section>
+
+    <div class="menu-container d-flex flex-row mb product">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Soft Drinks</h5>
+            <span>35</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DRINKS', 'Soft Drinks', 35)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+
+    <div class="menu-container d-flex flex-row mb product">
+        <div class="menu w-100">
+            <h5 class="text-1 product-name">Mineral Water (Small)</h5>
+            <span>20</span>
+        </div>
+        <div class="menu-price w-100 text-center">
+          <button class="btn" onclick="addToCart(this, 'DRINKS', 'Mineral Water (Small)', 20)">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <div class="order-now-link">
+  <a href="https://wa.me/+2001210065556" class="" target="_blank">ORDER NOW</a>
+</div> -->
+
 
 
 
     </main>
+<!-- new footer -->
+<footer>
+  <div class="my-container">
+      <div class="main-footer">
+      <!-- some info -->
+      <div class="sec-1">
+          <div class="logo">
+              <img src="./image/logo.png" alt="">
+          </div>
+          <div class="about">
+              <h3>ABOUT US</h3>
+              <p>Gogi Restaurant is an Asian Fusion restaurant, establishment located at the heart of Maadi, Cairo, Egypt. It offers a variety of traditional Korean dishes with a focus on healthy, flavorful menu options. Korean cuisine is known for its use of fresh vegetables, lean meats, and complex, aromatic seasonings, making it an appealing choice for health-conscious consumers.</p>
+          </div>
+      </div>
+      <!-- menu and pages -->
+      <div class="sec-2">
+          <div class="menu-category">
+              <h3>MENU</h3>
+              <div class="">
+                  <a href="./menu.html#APPETIZERS">APPETIZERS</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#SOUP">SOUP</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#MAIN-DISHES">MAIN DISHES</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#NOODLES">NOODLES</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#RICE">RICE</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#DESSERTS">DESSERTS</a>
+              </div>
+              <div class="">
+                  <a href="./menu.html#DRINKS">DRINKS</a>
+              </div>
+          </div>
+
+          <div class="other-links">
+              <h3>LINKS</h3>
+              <div class="home">
+                  <a href="./index.html">Home</a>
+              </div>
+              <div class="about">
+                  <a href="./about_us.html">About Us</a>
+              </div>
+              <div class="footer-menu">
+                  <a href="./shop.html">Menu</a>
+              </div>
+              <div class="shop">
+                  <a href="./shop.html">Shop</a>
+              </div>
+              <div class="contact">
+                  <a href="./contact_us.html">Get In Touch</a>
+              </div>
+          </div>
+      </div>
+          <!-- contact us link -->
+          <div class="sec-3">
+              <h2 class="contact-us">CONTACT INFO</h2>
+              <div class="links">
+                  <div class="footer-contact location">
+                      <a href="https://maps.app.goo.gl/oq8azYhfYxdJRqVCA">
+                          <i class="fa-solid fa-location-dot fa-fw"></i>
+                          <p class="card-text">27 Demshq Street, Maadi, Cairo, Egypt</p>
+                      </a>
+                  </div>
+                  <div class="footer-contact mail">
+                      <a href="mailto:info@gogiegy.com">
+                          <i class="fa-solid fa-envelope fa-fw"></i>
+                          <p class="">info@gogiegy.com</p>
+                      </a>
+                  </div>
+                  <div class="footer-contact time">
+                      <a href="https://wa.me/+2001210065556">
+                          <i class="fa-regular fa-clock"></i>
+                          <p class="card-text">
+                              We’re open daily from 12 PM to 12 AM 
+                          </p>
+                      </a>
+                  </div>
+                  <div class="footer-contact call"></div>
+              </div>
+              <div class="social links">
+                  <div class="element social">
+                      <div class="social-item">
+                          <a class="color-white" href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA==">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                      </div>
+                      <div class="social-item">
+                          <a class="color-white" href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL">
+                              <i class="fa-brands fa-facebook"></i>
+                          </a>
+                      </div>
+                      <div class="social-item">
+                          <a class="color-white" href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1">
+                              <i class="fa-brands fa-tiktok"></i>
+                          </a>
+                      </div>
+                      <div class="social-item">
+                          <a class="color-white" href="https://www.linkedin.com/company/gogiegypt/">
+                              <i class="fa-brands fa-linkedin"></i>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+      </div>
+  </div>
+  <div class="copyright"></div>
+  <div class="image-overlay"></div>
+</footer>
 
 
 
 
+<!-- add product to cart -->
+    <script>
+        function addToCart(button, category, name, price) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || {};
+            if (!cart[category]) cart[category] = [];
+            
+            let alreadyAdded = cart[category].some(item => item.name === name);
+            if (!alreadyAdded) {
+                cart[category].push({ name, price });
+                localStorage.setItem("cart", JSON.stringify(cart));
+                button.classList.add("added");
+                button.innerHTML = '<i class="fa-solid fa-check red-check"></i>';
+                button.disabled = true;
+                updateCartCount();
+            }
+        }
 
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || {};
+            let count = Object.values(cart).reduce((acc, category) => acc + category.length, 0);
+            document.getElementById("cart-count").innerText = count;
+        }
 
+        function markAddedProducts() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || {};
+            document.querySelectorAll(".product").forEach(product => {
+                let name = product.querySelector(".product-name").innerText.split(" - ")[0];
+                let button = product.querySelector(".btn");
+                Object.keys(cart).forEach(category => {
+                    if (cart[category].some(item => item.name === name)) {
+                        button.classList.add("added");
+                        button.innerHTML = '<i class="fa-solid fa-check red-check"></i>';
+                        button.disabled = true;
+                    }
+                });
+            });
+        }
 
+        updateCartCount();
+        markAddedProducts();
+    </script>
+<!-- add product to cart -->
 
-
-
-
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer>
-        <section class="r-section footer position-relative">
-            <div class="r-container d-flex flex-column justify-content-center text-center position-relative"
-                style="z-index: 2; max-width: 728px;">
-                <div class="mb">
-                    <img src="image/logo.png" alt="" class="footer-logo">
-                </div>
-                <div class="mb">
-                    <span>
-                        THE REAL ASIAN FLAVOUR
-                    </span>
-                </div>
-                <div class="element social justify-content-center">
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA==">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.linkedin.com/company/gogiegypt/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="image-overlay">
-            </div>
-        </section>
-        <section class="r-section bg-black p-0">
-            <div class="r-container py-4 w-100 justify-content-center" style="color: white;">
-                <script>document.write(new Date().getFullYear())</script> © Gogi. All Right Reserved
-            </div>
-        </section>
-    </footer>
+    <!-- Script javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/viewport.jquery.js"></script>
+    <script src="./js/jquery.meanmenu.min.js"></script>
+    <script src="./js/header.js"></script>
+    
 </body>
 
 </html>

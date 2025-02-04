@@ -5,113 +5,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheet -->
-    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/fontawesome.css">
-    <link rel="stylesheet" href="css/vendor/brands.css">
-    <link rel="stylesheet" href="css/vendor/regular.css">
-    <link rel="stylesheet" href="css/vendor/solid.css">
-    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/brands.css">
+    <link rel="stylesheet" href="./css/regular.css">
+    <link rel="stylesheet" href="./css/solid.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <!-- google fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Gogi - Get In Touch</title>
+    <title>Gogi</title>
 </head>
 
 <body>
-    <!-- Script javascript -->
-    <script src="js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/swiper-bundle.min.js"></script>
 
 
-    <!-- Sticky Header -->
-    <section class="r-section p-0 sticky-top bg-white shadow">
-        <div class="r-container p-0">
-            <!-- Navmenu -->
-            <nav class="navbar navbar-expand-lg w-100 py-0">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="./index.html"><img src="image/logo.png" class="img-site-logo" alt="" srcset=""></a>
-                    <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars icons-close"></i>
-                        <i class="fa-solid fa-xmark icons-open"></i>
-                    </button>
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link">HOME</a>
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top  d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="./image/logo.png" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu fix "></div>
+                    <div class="offcanvas__contact">
+                        <h4>CONTACT INFO</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="https://maps.app.goo.gl/oq8azYhfYxdJRqVCA">7 Demshq Street, Maadi, Cairo, Egypt</a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a href="about_us.html" class="nav-link">ABOUT</a>
+
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon ">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+013-003-003-9993"><span
+                                            class="mailto:info@gogiegy.com">info@gogiegy.com</span></a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a href="menu.html" class="nav-link">MENU</a>
+                            
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon ">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="https://wa.me/+2001210065556">We’re open daily from 12 PM to 12 AM </a>
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a href="shop.html" class="nav-link">SHOP</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="./index.html#news" class="nav-link">NEWS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact_us.html" class="nav-link">GET IN TOUCH</a>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon ">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="https://wa.me/+2001210065556">01210065556</a>
+                                </div>
                             </li>
                         </ul>
+                        <div class="header-button ">
+                            <a href="./menu.html" class="theme-btn">
+                                ORDER NOW
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://www.linkedin.com/company/gogiegypt/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
-    </section>
-    <!-- End of Header -->
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="main-header-wrapper">
+                <!-- logo -->
+                <div class="logo-image">
+                    <a href="index.html">
+                        <img src="./image/logo2023.png" alt="img">
+                    </a>
+                </div>
+                <div class="main-header-items">
+                    <div id="header-sticky" class="header-1 sticky open">
+                        <div class="mega-menu-wrapper">
+                            <div class="header-main">
+                                <div class="logo">
+                                    <a href="index.html" class="header-logo">
+                                        <img src="./image/logo2023.png" alt="logo-img">
+                                    </a>
+                                </div>
+                                <div class="header-left">
+                                    <div class="mean__menu-wrapper">
+                                        <div class="main-menu">
+                                        <nav id="mobile-menu">
+                                            <ul>
+                                                <li class="">
+                                                    <a href="./index.html">HOME</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="./about_us.html">ABOUT US</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./menu.html">MENU</a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="./shop.html">SHOP</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./contact_us.html">GIT IN TOUCH</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-right d-flex justify-content-end align-items-center">
+                                    <div class="header__cart cart-icon cart-icon">
+                                        <a href="cart.html">
+                                            <i class="fa-sharp fa-regular fa-cart-shopping"></i>
+                                            <span id="cart-count">0</span>
+                                        </a>
+                                    </div>
+                                    <a class="theme-btn" href="menu.html">ORDER NOW <i
+                                            class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                    <div class="header__hamburger d-xl-block my-auto">
+                                        <div class="sidebar__toggle">
+                                            <i class="fas fa-bars"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 
     <!-- main body -->
     <main>
+
         <section class="r-section section-3 position-relative min-vh-100">
-            <div class="r-container d-flex flex-column justify-content-center text-center position-relative"
-                style="z-index: 2;">
-                <h1 class="text-1 color-1">GIT IN TOUCH</h1>
+            <div class="heading">
+                <h1 class=" color-1 main-heading">Get In Touch</h1>
             </div>
             <div class="image-overlay">
-
             </div>
         </section>
 
-        <section class="r-section">
-            <div class="r-container position-relative">
-                <div class="position-absolute top-50 start-50 translate-middle">
-                    <img src="image/union.png" alt="" class="img-fluid" style="opacity: 15%;">
-                </div>
-                <div class="icon-box-container gap-4">
+        <section class="contact-us-cards">
+            <div class="my-container ">
+
+                <div class="boxes">
 
                     <div class="w-100 card rounded-0 shadow border-0 px-3 py-5 text-center">
                         <a href="https://maps.app.goo.gl/oq8azYhfYxdJRqVCA" class="contact-us-box" target="_blank">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div class="">
                             <div class=" contact-us-icon-box">
-                                <!-- <i class="fa-solid fa-truck"></i> -->
                                 <img src="./image/logo.png" alt="">
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-1">Our Restaurant</h4>
-                            <p class="card-text">27 Demshq Street, Maadi, Cairo, Egypt</p>
+                        <div class="card-content">
+                            <h4 class="">Our Restaurant</h4>
+                            <p class="">27 Demshq Street, Maadi, Cairo, Egypt</p>
                         </div>
                         </a>
                     </div>
 
                     <div class="w-100 card rounded-0 shadow border-0 px-3 py-5 text-center">
                         <a href="https://wa.me/+2001210065556" class="contact-us-box" target="_blank">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div class="">
                             <div class="icon-box">
                                 <i class="fa-solid fa-building "></i>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-1">Opening Hours</h4>
-                            <p class="card-text">
+                        <div class="card-content">
+                            <h4 class="">Opening Hours</h4>
+                            <p class="">
                                 We’re open daily from <br> 12 PM to 12 AM 
                             </p>
                         </div>
@@ -120,41 +215,37 @@
 
                     <div class="w-100 card rounded-0 shadow border-0 px-3 py-5 text-center">
                         <a href="https://wa.me/+2001210065556" class="contact-us-box" target="_blank">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <div class="">
                             <div class="icon-box">
                                 <i class="fa-solid fa-calendar-alt"></i>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-1">For Reservations</h4>
-                            <div class="contact-us-card-icons-1">
-                                <i class="fa-solid fa-phone"></i>
-                                <p class="">01099010930</p>
-                            </div>
+                        <div class="card-content">
+                            <h4 class="">For Reservations</h4>
+                            <p class="">01210065556</p>
                         </div>
                         </a>
                     </div>
 
                     <div class="w-100 card rounded-0 shadow border-0 px-3 py-5 text-center">
-                        <!-- <a href="mailto:info@gogiegy.com" class="contact-us-box" target="_blank"> -->
-                        <a href="https://wa.me/+2001099010930" class="contact-us-box" target="_blank">
-                        <div class="d-flex align-items-center justify-content-center">
+                        <a href="mailto:info@gogiegy.com" class="contact-us-box" target="_blank">
+                        <div class="">
                             <div class="icon-box">
                                 <i class="fa-regular fa-envelope"></i>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <h4 class="card-title text-1">For Business Enquires</h4>
+                        <div class="card-content">
+                            <h4 class="">For Business Enquires</h4>
                             <div class="contact-us-card-icons">
-                                <i class="fa-solid fa-envelope"></i>
+                                <i class="fa-solid fa-envelope fa-fw"></i>
                                 <p class="">info@gogiegy.com</p>
                             </div>
                             <div class="contact-us-card-icons">
-                                <i class="fa-solid fa-phone"></i>
-                                <p class="">0223590809  </p>
+                                <i class="fa-solid fa-phone fa-fw"></i>
+                                <p class="">0223590809</p>
                             </div>
                             <div class="contact-us-card-icons">
-                                <i class="fa-solid fa-phone"></i>
+                                <i class="fa-solid fa-phone fa-fw"></i>
                                 <p class="">01099010930</p>
                             </div>
                         </div>
@@ -163,6 +254,50 @@
                 </div>
             </div>
         </section>
+
+
+
+<!-- <section>
+    <div class="my-container">
+        <div class="cards">
+            <div class="contact-card">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque in quidem, inventore architecto totam facilis. Voluptate fuga expedita, excepturi a asperiores accusamus rerum neque incidunt sunt iure libero suscipit debitis!</p>
+            </div>
+            <div class="contact-card">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque in quidem, inventore architecto totam facilis. Voluptate fuga expedita, excepturi a asperiores accusamus rerum neque incidunt sunt iure libero suscipit debitis!</p>
+            </div>
+            <div class="contact-card">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque in quidem, inventore architecto totam facilis. Voluptate fuga expedita, excepturi a asperiores accusamus rerum neque incidunt sunt iure libero suscipit debitis!</p>
+            </div>
+            <div class="contact-card">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque in quidem, inventore architecto totam facilis. Voluptate fuga expedita, excepturi a asperiores accusamus rerum neque incidunt sunt iure libero suscipit debitis!</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <section class="r-section overflow-hidden">
             <div class="r-container p-0">
@@ -216,51 +351,151 @@
         </section>
 
     </main>
-    <!-- Footer -->
-    <footer>
-        <section class="r-section footer position-relative">
-            <div class="r-container d-flex flex-column justify-content-center text-center position-relative"
-                style="z-index: 2; max-width: 728px;">
-                <div class="mb-3">
-                    <img src="image/logo.png" alt="" class="footer-logo">
+<!-- new footer -->
+<footer>
+    <div class="my-container">
+        <div class="main-footer">
+        <!-- some info -->
+        <div class="sec-1">
+            <div class="logo">
+                <img src="./image/logo.png" alt="">
+            </div>
+            <div class="about">
+                <h3>ABOUT US</h3>
+                <p>Gogi Restaurant is an Asian Fusion restaurant, establishment located at the heart of Maadi, Cairo, Egypt. It offers a variety of traditional Korean dishes with a focus on healthy, flavorful menu options. Korean cuisine is known for its use of fresh vegetables, lean meats, and complex, aromatic seasonings, making it an appealing choice for health-conscious consumers.</p>
+            </div>
+        </div>
+        <!-- menu and pages -->
+        <div class="sec-2">
+            <div class="menu-category">
+                <h3>MENU</h3>
+                <div class="">
+                    <a href="./menu.html#APPETIZERS">APPETIZERS</a>
                 </div>
-                <div class="mb-3">
-                    <span>
-                        THE REAL ASIAN FLAVOUR
-                    </span>
+                <div class="">
+                    <a href="./menu.html#SOUP">SOUP</a>
                 </div>
-                <div class="element social justify-content-center">
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA==">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                    </div>
-                    <div class="social-item">
-                        <a class="color-white" href="https://www.linkedin.com/company/gogiegypt/">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </div>
+                <div class="">
+                    <a href="./menu.html#MAIN-DISHES">MAIN DISHES</a>
+                </div>
+                <div class="">
+                    <a href="./menu.html#NOODLES">NOODLES</a>
+                </div>
+                <div class="">
+                    <a href="./menu.html#RICE">RICE</a>
+                </div>
+                <div class="">
+                    <a href="./menu.html#DESSERTS">DESSERTS</a>
+                </div>
+                <div class="">
+                    <a href="./menu.html#DRINKS">DRINKS</a>
                 </div>
             </div>
-            <div class="image-overlay">
+
+            <div class="other-links">
+                <h3>LINKS</h3>
+                <div class="home">
+                    <a href="./index.html">Home</a>
+                </div>
+                <div class="about">
+                    <a href="./about_us.html">About Us</a>
+                </div>
+                <div class="footer-menu">
+                    <a href="./shop.html">Menu</a>
+                </div>
+                <div class="shop">
+                    <a href="./shop.html">Shop</a>
+                </div>
+                <div class="contact">
+                    <a href="./contact_us.html">Get In Touch</a>
+                </div>
             </div>
-        </section>
-        <section class="r-section bg-black p-0">
-            <div class="r-container py-4 w-100 justify-content-center" style="color: white;">
-                <script>document.write(new Date().getFullYear())</script> © Gogi. All Right Reserved
-            </div>
-        </section>
-    </footer>
+        </div>
+            <!-- contact us link -->
+            <div class="sec-3">
+                <h2 class="contact-us">CONTACT INFO</h2>
+                <div class="links">
+                    <div class="footer-contact location">
+                        <a href="https://maps.app.goo.gl/oq8azYhfYxdJRqVCA">
+                            <i class="fa-solid fa-location-dot fa-fw"></i>
+                            <p class="">2
+                                7 Demshq Street, Maadi, Cairo, Egypt
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-contact mail">
+                        <a href="mailto:info@gogiegy.com">
+                            <i class="fa-solid fa-envelope fa-fw"></i>
+                            <p class="">info@gogiegy.com</p>
+                        </a>
+                    </div>
+                    <div class="footer-contact time">
+                        <a href="https://wa.me/+2001210065556">
+                            <i class="fa-regular fa-clock"></i>
+                            <p class="">
+                                We’re open daily from 12 PM to 12 AM 
+                            </p>
+                        </a>
+                    </div>
+                    <div class="footer-contact call"></div>
+                </div>
+                <div class="social links">
+                    <div class="element social">
+                        <div class="social-item">
+                            <a class="color-white" href="https://www.instagram.com/gogiegy?igsh=MTFvdXdvYWp4aGVpOA==">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a class="color-white" href="https://www.facebook.com/gogiegy?mibextid=ZbWKwL">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a class="color-white" href="https://www.tiktok.com/@gogi_egy?_t=ZS-8tYIMdakL9Z&_r=1">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                        <div class="social-item">
+                            <a class="color-white" href="https://www.linkedin.com/company/gogiegypt/">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="copyright"></div>
+    <div class="image-overlay"></div>
+</footer>
+
+
+    <!-- cart products count -->
+    <script>
+        function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || {};
+    let count = Object.values(cart).reduce((acc, category) => acc + category.length, 0);
+    let cartIcon = document.getElementById("cart-count");
+    if (cartIcon) {
+        cartIcon.innerText = count;
+    }
+    }
+    document.addEventListener("DOMContentLoaded", updateCartCount);
+    </script>
+    <!-- Script javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.waypoints.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/viewport.jquery.js"></script>
+    <script src="./js/jquery.meanmenu.min.js"></script>
+    <script src="./js/header.js"></script>
+    
 </body>
 
 </html>
