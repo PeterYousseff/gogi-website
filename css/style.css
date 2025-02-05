@@ -780,15 +780,11 @@ color: white;
     max-width: 50px;
 }
 .red-check {
-    /* padding: 10px 8px !important; */
     border-radius: 5px;
-    color: var(--red-color);
-    /* color: white; */
     font-size: 25px;
-    /* background-color: var(--red-color) !important; */
 }
 
-.remove-btn { background: red; padding: 5px 10px; cursor: pointer; }
+.remove-btn {  padding: 5px 10px; cursor: pointer; }
 .total {
     display: flex;
     justify-content: center;
