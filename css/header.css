@@ -511,19 +511,7 @@ position: relative;
   position: relative;
 }
 
-.header-main .logo a::before {
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #d8261c;
-  top: -16px;
-  left: -7px;
-  z-index: 0;
-}
-.logo-img {
-z-index: 100;
-}
+
 
 
 

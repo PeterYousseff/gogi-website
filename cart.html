@@ -32,7 +32,7 @@
                 <div class="offcanvas__content">
                     <div class="offcanvas__top  d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="index.html">
+                            <a href="./home.html">
                                 <img src="./image/logo.png" alt="logo-img">
                             </a>
                         </div>
@@ -106,8 +106,8 @@
             <div class="main-header-wrapper">
                 <!-- logo -->
                 <div class="logo-image">
-                    <a href="index.html">
-                        <img src="./image/logo2023.png" alt="img">
+                    <a href="./home.html">
+                        <img src="./image/logo.png" alt="img">
                     </a>
                 </div>
                 <div class="main-header-items">
@@ -115,8 +115,8 @@
                         <div class="mega-menu-wrapper">
                             <div class="header-main">
                                 <div class="logo">
-                                    <a href="index.html" class="header-logo">
-                                        <img src="./image/logo2023.png" alt="logo-img">
+                                    <a href="./home.html" class="header-logo">
+                                        <img src="./image/logo.png" alt="logo-img">
                                     </a>
                                 </div>
                                 <div class="header-left">
@@ -125,7 +125,7 @@
                                         <nav id="mobile-menu">
                                             <ul>
                                                 <li class="">
-                                                    <a href="./index.html">HOME</a>
+                                                    <a href="./home.html">HOME</a>
                                                 </li>
                                                 <li class="">
                                                     <a href="./about_us.html">ABOUT US</a>
@@ -145,9 +145,9 @@
                                     </div>
                                 </div>
                                 <div class="header-right d-flex justify-content-end align-items-center">
-                                  <div class="header__cart cart-icon cart-icon">
-                                    <a href="cart.html"><i class="fa-sharp fa-regular fa-cart-shopping" ></i> <span id="cart-count">0</span></a>
-                                </div>
+                                    <div class="header__cart cart-icon cart-icon">
+                                        <a href="cart.html"><i class="fa-sharp fa-regular fa-cart-shopping" ></i> <span id="cart-count">0</span></a>
+                                    </div>
                                     <a class="theme-btn" href="menu.html">ORDER NOW <i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                     <div class="header__hamburger d-xl-block my-auto">
@@ -163,6 +163,7 @@
             </div>
         </div>
     </header>
+
 
 
     <!-- main body -->
@@ -185,24 +186,13 @@
 
 
 
-<section class="r-section section-4 overflow-hidden">
+<div id="cart-container" class=" my-container"></div>
 <div class="my-container">
-  <div class="cart-container" id="cart-items"></div>
-  <div class="total">
-    <div class="">
-      <h3>Total: <span id="total-price">0</span> LE</h3>
+    <div class="cart-btn">
+        <button class="btn whatsapp" onclick="sendOrderToWhatsApp()">Send Order to WhatsApp</button>
+        <button class="btn clear" onclick="clearCart()">Clear Cart</button>
     </div>
-    <div class="buttons">
-      <button class="send-whatsapp" onclick="sendToWhatsApp()">Send Order to WhatsApp</button>
-      <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
-    </div>
-  </div>
 </div>
-
-</section>
-
-
-
 
 </main>
 
@@ -231,25 +221,25 @@
             <div class="menu-category">
                 <h3>MENU</h3>
                 <div class="">
-                    <a href="./menu.html#APPETIZERS">APPETIZERS</a>
+                    <a href="./menu.html">APPETIZERS</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#SOUP">SOUP</a>
+                    <a href="./menu.html">SOUP</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#MAIN-DISHES">MAIN DISHES</a>
+                    <a href="./menu.html">MAIN DISHES</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#NOODLES">NOODLES</a>
+                    <a href="./menu.html">NOODLES</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#RICE">RICE</a>
+                    <a href="./menu.html">RICE</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#DESSERTS">DESSERTS</a>
+                    <a href="./menu.html">DESSERTS</a>
                 </div>
                 <div class="">
-                    <a href="./menu.html#DRINKS">DRINKS</a>
+                    <a href="./menu.html">DRINKS</a>
                 </div>
             </div>
 
@@ -262,7 +252,7 @@
                     <a href="./about_us.html">About Us</a>
                 </div>
                 <div class="footer-menu">
-                    <a href="./shop.html">Menu</a>
+                    <a href="./menu.html">Menu</a>
                 </div>
                 <div class="shop">
                     <a href="./shop.html">Shop</a>
@@ -330,74 +320,144 @@
 </footer>
 
 
-<!--  cart -->
+
+
 <script>
-  function loadCart() {
+    function loadCart() {
+let cart = JSON.parse(localStorage.getItem("cart")) || {};
+let container = document.getElementById("cart-container");
+let totalPrice = 0;     // Total price of all products
+
+container.innerHTML = "";
+
+Object.keys(cart).forEach(category => {
+    if (cart[category].length === 0) {
+        delete cart[category];  // Remove empty categories
+        return;
+    }
+    let section = document.createElement("div");
+    section.classList.add("category-section");
+    section.innerHTML = `<h2 class="cart-heading">${category}</h2>
+        <div class="items" id="category-${category}"></div>`;
+
+    cart[category].forEach(item => {
+            totalPrice += item.price * item.quantity; // Calculate total price
+
+
+        let itemDiv = document.createElement("div");
+        itemDiv.classList.add("cart-product");
+        itemDiv.innerHTML = `
+        <div class="cart-items">
+            <h5 >${item.name}</h5>
+            <span class="cart-item-price">${item.price} LE</span>
+        </div>
+            <div class="cart-counter">
+                <button class="minus c-red" onclick="updateCart(${item.id}, '${category}', -1)">-</button>
+                <span>${item.quantity}</span>
+                <button class="plus c-green" onclick="updateCart(${item.id}, '${category}', 1)">+</i></button>
+            </div>
+        `;
+
+        section.querySelector(".items").appendChild(itemDiv);
+    });
+
+    container.appendChild(section);
+});
+
+localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+updateCartCount()
+
+
+// Display total products & total price in the cart
+let totalContainer = document.getElementById("cart-total");
+if (!totalContainer) {
+    totalContainer = document.createElement("div");
+    totalContainer.id = "cart-total";
+    container.appendChild(totalContainer);
+}
+totalContainer.innerHTML = `
+    <h3 class="cart-total-price">Total Price: ${totalPrice.toFixed(2)} LE</h3>
+`;
+
+localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+}
+
+
+
+
+function updateCart(id, category, change) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        let itemIndex = cart[category]?.findIndex(item => item.id === id);
+
+        if (itemIndex > -1) {
+            cart[category][itemIndex].quantity += change;
+            if (cart[category][itemIndex].quantity <= 0) {
+                cart[category].splice(itemIndex, 1);
+            }
+        }
+
+        if (cart[category]?.length === 0) {
+            delete cart[category];
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        loadCart();
+    }
+
+    function clearCart() {
+        localStorage.removeItem("cart");
+        loadCart();
+    }
+
+    function sendOrderToWhatsApp() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        if (Object.keys(cart).length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        let orderMessage = "*Order Summary:*\n\n";
+        let totalPrice = 0;
+
+        Object.keys(cart).forEach(category => {
+            orderMessage += `*${category}*\n`;
+            cart[category].forEach(item => {
+                orderMessage += `${item.name} × ${item.quantity} = ${item.price * item.quantity} LE\n`;
+                totalPrice += item.price * item.quantity;
+            });
+            orderMessage += "\n";
+        });
+
+        orderMessage += `*Total: ${totalPrice} LE*\n`;
+        orderMessage += `Order from our store now!`;
+
+        let whatsappNumber = "2001210065556"; // Change to your WhatsApp number
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
+        window.open(whatsappURL, "_blank");
+  updateCartCount()
+
+    }
+
+
+
+    function updateCartCount() {
       let cart = JSON.parse(localStorage.getItem("cart")) || {};
-      let cartItems = document.getElementById("cart-items");
-      let totalPrice = 0;
-      cartItems.innerHTML = "";
-
-      Object.keys(cart).forEach(category => {
-          cartItems.innerHTML += `<div class="category-title">${category}</div>`;
-          cart[category].forEach((item, index) => {
-              totalPrice += item.price;
-              cartItems.innerHTML += `
-                  <div class="cart-item">
-                      <span>${item.name} - ${item.price} LE</span>
-                      <button class="remove-btn" onclick="removeItem('${category}', ${index})">Remove</button>
-                  </div>`;
-          });
-      });
-
-      document.getElementById("total-price").innerText = totalPrice;
-      document.getElementById("cart-count").innerText = Object.values(cart).reduce((acc, c) => acc + c.length, 0);
+      let totalItems = Object.values(cart).flat().reduce((sum, item) => sum + item.quantity, 0);
+      document.getElementById("cart-count").innerText = totalItems;
   }
 
-  function removeItem(category, index) {
-      let cart = JSON.parse(localStorage.getItem("cart")) || {};
-      cart[category].splice(index, 1);
-      if (cart[category].length === 0) delete cart[category];
-      localStorage.setItem("cart", JSON.stringify(cart));
-      loadCart();
-  }
 
-  function clearCart() {
-      localStorage.removeItem("cart");
-      loadCart();
-  }
+  
+  // Call loadCart() when the page loads
+  document.addEventListener("DOMContentLoaded", loadCart);
 
-  function sendToWhatsApp() {
-      let cart = JSON.parse(localStorage.getItem("cart")) || {};
-      if (Object.keys(cart).length === 0) {
-          alert("Your cart is empty!");
-          return;
-      }
 
-      let message = "*Order Details:*\n\n";
-      let totalPrice = 0;
 
-      Object.keys(cart).forEach(category => {
-          message += `*${category}:*\n`;
-          cart[category].forEach(item => {
-              message += `   - ${item.name}: ${item.price} LE\n`;
-              totalPrice += item.price;
-          });
-          message += "\n";
-      });
 
-      message += `*Total:* ${totalPrice} LE`;
-
-      let phoneNumber = "2001210065556"; // Replace with your WhatsApp number
-      let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-      window.open(whatsappUrl, "_blank");
-  }
-
-  loadCart();
 </script>
 
-<!--  cart -->
+
+
 
     <!-- Script javascript -->
     <script src="./js/bootstrap.bundle.min.js"></script>
