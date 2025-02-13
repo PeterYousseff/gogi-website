@@ -305,6 +305,12 @@ span {
 .header-logo img {
   width: 80px;
 }
+@media (max-width: 767px) {
+  .main-header-wrapper .logo-image a img ,
+.header-logo img {
+  width: 50px;
+}
+}
 .main-header-wrapper .main-header-items {
   width: 100%;
 }
@@ -506,6 +512,13 @@ span {
 
 .header-main .logo {
 position: relative;
+span {
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
 }
 .header-main .logo img {
   position: relative;
@@ -536,7 +549,6 @@ position: relative;
   display: inline-block;
   font-size: 20px;
   font-weight: 600;
-  color: black;
   padding: 20px 0;
   text-align: left;
   position: relative;
@@ -551,7 +563,6 @@ position: relative;
 }
 @media (max-width: 1899px) {
   .header-main .main-menu ul li a {
-    color: black;
   }
 }
 .header-main .main-menu ul li:hover > a {
@@ -602,28 +613,7 @@ position: relative;
   padding: 15px 0;
   position: relative;
 }
-/* .header-main .header-right .header__cart > a::before {
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 15px;
-  position: absolute;
-  top: 0;
-  right: -10px;
-  width: 15px;
-  height: 15px;
-  padding: 0 4px;
-  content: "";
-  text-align: center;
-  border-radius: 100%;
-  background: #d8261c;
-  color: var(--white);
-}
-@media (max-width: 991px) {
-  .header-main .header-right .header__cart > a::before {
-    top: 7px;
-    right: 11px;
-  }
-} */
+
 
 .header-main .sidebar__toggle {
   cursor: pointer;
@@ -672,9 +662,7 @@ position: relative;
   }
 }
 
-.sticky .header-main .main-menu ul li a {
-  color: var(--title);
-}
+
 .offcanvas__info {
   background: var(--white) none repeat scroll 0 0;
   border-left: 2px solid var(--theme);
@@ -710,6 +698,11 @@ position: relative;
 }
 .offcanvas__logo a img {
   width: 70px;
+}
+.offcanvas__logo span {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
 }
 .offcanvas__wrapper {
   position: relative;
@@ -838,4 +831,14 @@ position: relative;
 header  {
   position:relative;
   z-index: 100;
+}
+
+
+
+
+.header-link-active {
+  color: #d8261c;
+}
+.header-link {
+color: black;
 }
