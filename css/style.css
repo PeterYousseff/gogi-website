@@ -1271,9 +1271,31 @@ flex-direction: column;
     }
 }
 .label-category-shop h1 {
-    text-align: center;
     margin-bottom: 50px;
 }
 .shop-item-img {
     margin-bottom: 20px;
+}
+
+/* about section */
+.about-section {
+    padding: 100px 0;
+    text-align: center;
+    h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 70px;
+        color: #d8261c;
+    }
+    h2 {
+        font-size: 40px;
+        color: #d8261c;
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    p {
+        
+        font-size: 20px;
+        line-height: 2;
+    }
 }
