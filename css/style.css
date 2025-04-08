@@ -997,7 +997,7 @@ footer .sec-3 {
     }
 }
 footer .sec-3 .footer-contact {
-    margin-bottom: 10px;
+    margin-bottom: 3px;
 }
 footer .sec-3 .footer-contact a {
     display: flex;
@@ -1040,11 +1040,13 @@ p {
 }
 }
 .card-content h4 {
-margin-top: 20px;
+/* margin-top: 20px; */
 
 }
 
-
+.margin-t-10 {
+    margin-top: 10px;
+}
 
 
 
@@ -1237,11 +1239,11 @@ flex-direction: column;
     h1 {
         text-align: center;
         font-weight: bold;
-        font-size: 70px;
+        font-size: 60px;
         color: #d8261c;
     }
     h2 {
-        font-size: 40px;
+        font-size: 35px;
         color: #d8261c;
         font-weight: bold;
         margin-top: 30px;
@@ -1249,9 +1251,37 @@ flex-direction: column;
     p {
         
         font-size: 20px;
-        line-height: 2;
+        /* line-height: 2; */
+        text-align: left;
     }
 }
+
+@media (max-width:992px) {
+    .about-section {
+        padding: 100px 0;
+        text-align: center;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 60px;
+            color: #d8261c;
+        }
+        h2 {
+            font-size: 35px;
+            color: #d8261c;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        p {
+            
+            font-size: 16px;
+            /* line-height: 2; */
+            text-align: left;
+        }
+    }
+}
+
+
 
 @media(max-width:992px) {
     .about-section h1 {
@@ -1263,3 +1293,52 @@ flex-direction: column;
     margin: 120px 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+.relative {
+    position: relative;
+}
+.center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+.my-card-home {
+    padding: 10px;
+     p{
+        text-align: left;
+        font-size: 20px;
+     }
+}
+
+@media (max-width:992px) {
+    .my-card-home {
+        padding: 10px;
+         p{
+            text-align: left;
+            font-size: 18px;
+         }
+    }
+}
+
+
+.my-card-home {
+    border-radius: 0px;
+}
