@@ -912,6 +912,7 @@ border: 1px solid #d8261c;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 
