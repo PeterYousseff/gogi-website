@@ -1095,10 +1095,15 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     margin-bottom: 80px;
 }
-
+@media (max-width :992px) {
+    .cart-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 .cart-total-price {
     text-align: center;
 }

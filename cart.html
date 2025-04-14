@@ -250,7 +250,8 @@
 <div id="cart-container" class=" my-container"></div>
 <div class="my-container">
     <div class="cart-btn">
-        <button class="btn whatsapp" onclick="sendOrderToWhatsApp()">Send Order to WhatsApp</button>
+        <button class="btn whatsapp" onclick="sendOrderToWhatsAppMaadiBranch()">Send Order to WhatsApp Maadi Branch</button>
+        <button class="btn whatsapp" onclick="sendOrderToWhatsAppNewCairoBranch()">Send Order to WhatsApp New cairo Branch</button>
         <button class="btn clear" onclick="clearCart()">Clear Cart</button>
     </div>
 </div>
@@ -517,7 +518,36 @@ function updateCart(id, category, change) {
         loadCart();
     }
 
-    function sendOrderToWhatsApp() {
+    function sendOrderToWhatsAppMaadiBranch() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        if (Object.keys(cart).length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        let orderMessage = "*Order Summary:*\n\n";
+        let totalPrice = 0;
+
+        Object.keys(cart).forEach(category => {
+            orderMessage += `*${category}*\n`;
+            cart[category].forEach(item => {
+                orderMessage += `${item.name} × ${item.quantity} = ${item.price * item.quantity} LE\n`;
+                totalPrice += item.price * item.quantity;
+            });
+            orderMessage += "\n";
+        });
+
+        orderMessage += `*Total: ${totalPrice} LE*\n`;
+        orderMessage += `Order from our store now!`;
+
+        let whatsappNumber = "2001099010930"; // Change to your WhatsApp number
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
+        window.open(whatsappURL, "_blank");
+  updateCartCount()
+    }
+
+
+    function sendOrderToWhatsAppNewCairoBranch() {
         let cart = JSON.parse(localStorage.getItem("cart")) || {};
         if (Object.keys(cart).length === 0) {
             alert("Your cart is empty!");
@@ -543,7 +573,6 @@ function updateCart(id, category, change) {
         let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
         window.open(whatsappURL, "_blank");
   updateCartCount()
-
     }
 
 
