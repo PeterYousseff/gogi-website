@@ -1100,8 +1100,8 @@ align-items: center;
 }
 @media (max-width :992px) {
     .cart-btn {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column !important;
+        gap: 10px !important;
     }
 }
 .cart-total-price {
