@@ -836,6 +836,14 @@ border: 1px solid #d8261c;
 }
 
 
+.userNote {
+    font-weight: bold;
+    font-size: 25px;
+    color: #d8261c;
+}
+
+
+
 
 .product-menu-container {
     display: flex;

@@ -62,7 +62,7 @@
                         <ul>
 
 
-                            
+
                             <h4>Maadi</h4>
                             <li class="d-flex align-items-center">
                                 <div class="offcanvas__contact-icon">
@@ -78,7 +78,7 @@
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="https://wa.me/+2001099010930">01099010930</a>
+                                    <a href="https://wa.me/+2001210065556">01210065556</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -105,7 +105,7 @@
 
 
 <!-- new cairo -->
-                            <h4>New Cairo</h4>
+                            <h4 class="color-red">New Cairo</h4>
                             <li class="d-flex align-items-center">
                                 <div class="offcanvas__contact-icon">
                                     <i class="fal fa-map-marker-alt"></i>
@@ -249,6 +249,12 @@
 
 <div id="cart-container" class=" my-container"></div>
 <div class="my-container">
+
+    <div class="cart-note">
+        <label for="userNote" class="userNote">Add a note to your order:</label>
+        <input type="text" id="userNote" placeholder="e.g. No onions, please" class="form-control my-2">
+    </div>
+    
     <div class="cart-btn">
         <button class="btn whatsapp" onclick="sendOrderToWhatsAppMaadiBranch()">Send Order to WhatsApp Maadi Branch</button>
         <button class="btn whatsapp" onclick="sendOrderToWhatsAppNewCairoBranch()">Send Order to WhatsApp New cairo Branch</button>
@@ -338,9 +344,9 @@
                     
                     
                     <div class="footer-contact location">
-                        <a href="https://wa.me/+2001099010930">
+                        <a href="https://wa.me/+2001210065556">
                             <i class="far fa-phone"></i>
-                            <p class="card-text">01099010930</p>
+                            <p class="card-text">01210065556</p>
                         </a>
                     </div>
 
@@ -362,7 +368,7 @@
 
 
 
-                    
+
                     <h4 class="color-red">New Cairo</h4>
                     <div class="footer-contact location">
                         <a href="https://maps.app.goo.gl/faYPFCqMV9bTz7xj6">
@@ -373,9 +379,9 @@
                     
                     
                     <div class="footer-contact location">
-                        <a href="https://wa.me/+2001210065556">
+                        <a href="https://wa.me/+2001288880604">
                             <i class="far fa-phone"></i>
-                            <p class="card-text">01210065556</p>
+                            <p class="card-text">01288880604</p>
                         </a>
                     </div>
 
@@ -430,8 +436,7 @@
 
 
 
-
-<script>
+<!-- <script>
     function loadCart() {
 let cart = JSON.parse(localStorage.getItem("cart")) || {};
 let container = document.getElementById("cart-container");
@@ -591,8 +596,167 @@ function updateCart(id, category, change) {
 
 
 
-</script>
+</script> -->
 
+<script>
+    function loadCart() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        let container = document.getElementById("cart-container");
+        let totalPrice = 0;
+
+        container.innerHTML = "";
+
+        Object.keys(cart).forEach(category => {
+            if (cart[category].length === 0) {
+                delete cart[category];
+                return;
+            }
+
+            let section = document.createElement("div");
+            section.classList.add("category-section");
+            section.innerHTML = `<h2 class="cart-heading">${category}</h2>
+                <div class="items" id="category-${category}"></div>`;
+
+            cart[category].forEach(item => {
+                totalPrice += item.price * item.quantity;
+
+                let itemDiv = document.createElement("div");
+                itemDiv.classList.add("cart-product");
+                itemDiv.innerHTML = `
+                    <div class="cart-items">
+                        <h5>${item.name}</h5>
+                        <span class="cart-item-price">${item.price} LE</span>
+                    </div>
+                    <div class="cart-counter">
+                        <button class="minus c-red" onclick="updateCart(${item.id}, '${category}', -1)">-</button>
+                        <span>${item.quantity}</span>
+                        <button class="plus c-green" onclick="updateCart(${item.id}, '${category}', 1)">+</button>
+                    </div>
+                `;
+
+                section.querySelector(".items").appendChild(itemDiv);
+            });
+
+            container.appendChild(section);
+        });
+
+        // Display total products & total price
+        let totalContainer = document.getElementById("cart-total");
+        if (!totalContainer) {
+            totalContainer = document.createElement("div");
+            totalContainer.id = "cart-total";
+            container.appendChild(totalContainer);
+        }
+
+        totalContainer.innerHTML = `
+            <h3 class="cart-total-price">Total Price: ${totalPrice.toFixed(2)} LE</h3>
+        `;
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+    }
+
+    function updateCart(id, category, change) {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        let itemIndex = cart[category]?.findIndex(item => item.id === id);
+
+        if (itemIndex > -1) {
+            cart[category][itemIndex].quantity += change;
+            if (cart[category][itemIndex].quantity <= 0) {
+                cart[category].splice(itemIndex, 1);
+            }
+        }
+
+        if (cart[category]?.length === 0) {
+            delete cart[category];
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        loadCart();
+    }
+
+    function clearCart() {
+        localStorage.removeItem("cart");
+        loadCart();
+    }
+
+    function sendOrderToWhatsAppMaadiBranch() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        if (Object.keys(cart).length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        let orderMessage = "*Order Summary:*\n\n";
+        let totalPrice = 0;
+
+        Object.keys(cart).forEach(category => {
+            orderMessage += `*${category}*\n`;
+            cart[category].forEach(item => {
+                orderMessage += `${item.name} × ${item.quantity} = ${item.price * item.quantity} LE\n`;
+                totalPrice += item.price * item.quantity;
+            });
+            orderMessage += "\n";
+        });
+
+        let userNote = document.getElementById("userNote")?.value || "";
+        orderMessage += `*Total: ${totalPrice} LE*\n`;
+
+        if (userNote.trim() !== "") {
+            orderMessage += `\n*Note:* ${userNote.trim()}\n`;
+        }
+
+        orderMessage += `Order from our store now!`;
+
+        let whatsappNumber = "201210065556";
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
+        window.open(whatsappURL, "_blank");
+        updateCartCount();
+    }
+
+    function sendOrderToWhatsAppNewCairoBranch() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        if (Object.keys(cart).length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+
+        let orderMessage = "*Order Summary:*\n\n";
+        let totalPrice = 0;
+
+        Object.keys(cart).forEach(category => {
+            orderMessage += `*${category}*\n`;
+            cart[category].forEach(item => {
+                orderMessage += `${item.name} × ${item.quantity} = ${item.price * item.quantity} LE\n`;
+                totalPrice += item.price * item.quantity;
+            });
+            orderMessage += "\n";
+        });
+
+        let userNote = document.getElementById("userNote")?.value || "";
+        orderMessage += `*Total: ${totalPrice} LE*\n`;
+
+        if (userNote.trim() !== "") {
+            orderMessage += `\n*Note:* ${userNote.trim()}\n`;
+        }
+
+        orderMessage += `Order from our store now!`;
+
+        let whatsappNumber = "201288880604";
+        let whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(orderMessage)}`;
+        window.open(whatsappURL, "_blank");
+        updateCartCount();
+    }
+
+    function updateCartCount() {
+        let cart = JSON.parse(localStorage.getItem("cart")) || {};
+        let totalItems = Object.values(cart).flat().reduce((sum, item) => sum + item.quantity, 0);
+        let cartCountEl = document.getElementById("cart-count");
+        if (cartCountEl) cartCountEl.innerText = totalItems;
+    }
+
+    document.addEventListener("DOMContentLoaded", loadCart);
+</script>
 
 
 
